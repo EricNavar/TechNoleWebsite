@@ -1,41 +1,39 @@
-import VarunPic from "../../assets/Varun.png";
-import AndrewPic from "../../assets/Andrew.jpg";
-import RangerPic from "../../assets/Ranger.jpg";
-import EricPic from "../../assets/Eric.jpg";
-
-// these need to be changed to jpg and sized appropriately before shipping
-import KatherinePic from "../../assets/Katherine.png";
-import TianruiPic from "../../assets/Tianrui.png";
+import HectorRizo1 from "../../assets/people/hector1.jpg";
+import HectorRizo2 from "../../assets/people/hector2.jpg";
+import HectorRizo3 from "../../assets/people/hector3.jpg";
+import HectorRizo4 from "../../assets/people/hector4.jpg";
+import HectorRizo5 from "../../assets/people/hector5.jpg";
+import HectorRizo6 from "../../assets/people/hector6.jpg";
 
 export default [
   {
-    name: "Varun Puri",
+    name: "Hector Rizo",
     position: "President",
-    imgSrc: VarunPic,
+    imgSrc: HectorRizo1
   },
   {
-    name: "Eric Navar",
+    name: "Hector Rizo",
     position: "Vice President",
-    imgSrc: EricPic,
+    imgSrc: HectorRizo2
   },
   {
-    name: "Andrew Kennedy",
+    name: "Hector Rizo",
     position: "Treasurer",
-    imgSrc: AndrewPic,
+    imgSrc: HectorRizo3
   },
   {
-    name: "Ranger Chenore",
+    name: "Hector Rizo",
     position: "Communications Officer",
-    imgSrc: RangerPic,
+    imgSrc: HectorRizo4
   },
   {
-    name: " Katherine Chan",
+    name: "Hector Rizo",
     position: "Program Officer",
-    imgSrc: KatherinePic,
+    imgSrc: HectorRizo5
   },
   {
-    name: "Tianrui Li",
+    name: "Hector Rizo",
     position: "Development Officer",
-    imgSrc: TianruiPic,
+    imgSrc: HectorRizo6
   },
 ];

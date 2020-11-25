@@ -36,19 +36,10 @@ function AboutUs() {
       </Grid>
       <Grid item xs={12} sm={6} component='article' className={classes.aboutUsArticle}>
         <Typography component='h3' variant='body1' className={classes.aboutUsDescription}>
-          The Society of Software Developers is focused on helping members learn
-          the principles of software design and apply them to real-world
-          applications.
+          TechNole is a user-friendly environment, that is responsive towards the advancement in the technology community. We seek to give every student at the Florida State University an opportunity to learn computer programming in a fun, informal, and innovative environment regardless of major or coding experience. We showcase services that increase productivity, enhance computing experiences, and the ability to network with current and prospective TechNole members.
           <br />
           <br />
-          We are more academic in nature than other organizations and work to
-          create a community where students can ask for feedback and assistance
-          for the projects.
-          <br />
-          <br />
-          The concepts discussed and used help with building complex software
-          systems and better prepare members for team projects, internships, and
-          careers in software development.
+          While partaking in a reliable, efficient, and friendly organization, we are "Conquering Technology Together".
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} style={{textAlign: 'center', display: 'contents'}}>
