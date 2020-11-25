@@ -8,9 +8,10 @@ const useStyles = makeStyles((theme) => ({
   aboutUsArticle: {
     width: "100%",
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
+    textAlign: 'left'
   },
   aboutUsDescription: {
     width: 500,
@@ -18,6 +19,21 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 12,
     paddingRight: 12,
     marginBottom: 20
+  },
+  divider: {
+    backgroundColor: '#ffba35',
+    width: 80,
+    height: 5,
+    marginBottom: 10
+  },
+  titleContainer: {
+    textAlign: 'center',
+    marginTop:16
+  },
+  dividerContainer: {
+    marginBottom: 16,
+    justifyContent: 'center',
+    display: 'grid'
   }
 }));
 
@@ -30,12 +46,19 @@ function AboutUs() {
       justify="center"
       alignItems="center"
       component='section'
+      spacing={0}
     >
-      <Grid item xs={12} style={{textAlign: 'center', marginTop:16}}>
-        <Typography component='h2' variant='h2'>What We Do</Typography>
+      <Grid item xs={12} className={classes.titleContainer}>
+        <Typography component='h2' variant='h2' gutterBottom>What We Do</Typography>
+      </Grid>
+      <Grid item xs={12} className={classes.dividerContainer}>
+        <div className={classes.divider}></div>
       </Grid>
       <Grid item xs={12} sm={6} component='article' className={classes.aboutUsArticle}>
-        <Typography component='h3' variant='body1' className={classes.aboutUsDescription}>
+        <Typography component='h3' variant='h5' className={classes.dream}>
+          Ever dream of creating something awesome?
+        </Typography>
+        <Typography component='p' variant='body1' className={classes.aboutUsDescription}>
           TechNole is a user-friendly environment, that is responsive towards the advancement in the technology community. We seek to give every student at the Florida State University an opportunity to learn computer programming in a fun, informal, and innovative environment regardless of major or coding experience. We showcase services that increase productivity, enhance computing experiences, and the ability to network with current and prospective TechNole members.
           <br />
           <br />

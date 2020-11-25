@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import HomePage from "./screens/HomePage";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import HomePage from "./screens/HomePage.js";
+import Header from "./Components/Header.js";
+import Footer from "./Components/Footer.js";
 
 //https://reacttraining.com/react-router/web/guides/quick-start
 
@@ -34,7 +34,7 @@ export default function Root() {
       },
       h2: {
         fontSize: "2.5rem",
-        marginBottom: 20,
+        marginBottom: 10,
         marginTop: 0
       }
     }

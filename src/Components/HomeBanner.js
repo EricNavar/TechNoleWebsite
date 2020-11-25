@@ -38,11 +38,11 @@ export default function HomeBanner() {
       <div className={classes.homeBanner}>
         <div className={classes.homeBannerTextContainer}>
           <Typography variant='h1' component='h1'>
-            Software Development and Design
+            Learn by doing.
           </Typography>
         </div>
         <Typography variant='p' component='h2'>Fall 2020 Meetings</Typography>
-        <Typography className={classes.meetingInfo}>Wednesdays, 6:15pm over Zoom</Typography>
+        <Typography className={classes.meetingInfo}>Wednesdays, 5:00pm over Zoom</Typography>
       </div>
     </section>
   );

@@ -22,7 +22,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     maxWidth: 1000,
     margin: 'auto'
-  }
+  },
+  divider: {
+    backgroundColor: '#ffba35',
+    width: 80,
+    height: 5,
+    marginBottom: 10
+  },
 }));
 
 function ContactBanner() {
@@ -30,6 +36,9 @@ function ContactBanner() {
   return (
     <section className={classes.contactBanner}>
       <Typography component='h2' variant='h2'>Contact</Typography>
+      <center>
+        <div className={classes.divider}></div>
+      </center>
       <Grid
         id='contact-card-grid-container'
         container
@@ -38,16 +47,16 @@ function ContactBanner() {
         alignItems="center"
         className={classes.ContactBannerContainer}
       >
-        <ContactCard id='ranger-contact-card'
-          description="Email our officer of communications"
-          name="Ranger"
-          email="ufssd.org@gmail.com"
+        <ContactCard id='secretary-contact-card'
+          description="Email our secretary"
+          name="Hector Rizo"
+          email="hector@fsu.edu"
           imgSrc={Hector1}
         />
-        <ContactCard id='varun-contact-card'
+        <ContactCard id='president-contact-card'
           description="Email the president directly"
-          name="Varun"
-          email="vpuri@ufl.edu"
+          name="Hector Rizo"
+          email="hector@fsu.edu"
           imgSrc={Hector2}
         />
       </Grid>
