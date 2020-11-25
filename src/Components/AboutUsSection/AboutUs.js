@@ -14,11 +14,15 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'left'
   },
   aboutUsDescription: {
+    maxWidth: '100vw',
     width: 500,
     textAlign: "center",
     paddingLeft: 12,
     paddingRight: 12,
-    marginBottom: 20
+    marginBottom: 20,
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: 'calc(100vw - 18px)'
+    }
   },
   divider: {
     backgroundColor: '#ffba35',
@@ -55,7 +59,7 @@ function AboutUs() {
         <div className={classes.divider}></div>
       </Grid>
       <Grid item xs={12} sm={6} component='article' className={classes.aboutUsArticle}>
-        <Typography component='h3' variant='h5' className={classes.dream}>
+        <Typography component='h3' variant='h5' style={{textAlign:'center'}}>
           Ever dream of creating something awesome?
         </Typography>
         <Typography component='p' variant='body1' className={classes.aboutUsDescription}>

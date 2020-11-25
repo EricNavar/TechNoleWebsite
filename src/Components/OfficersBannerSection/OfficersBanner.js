@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     width: 80,
     height: 5,
     marginBottom: 10
-  },
+  }
 }));
 
 function OfficersBanner() {
