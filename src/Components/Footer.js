@@ -3,31 +3,31 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import {makeStyles} from "@material-ui/core/styles";
-import Discord from "../assets/Discord.svg";
-import Facebook from "../assets/Facebook.svg";
-import Github from "../assets/Github.svg";
-import Zoom from "../assets/Zoom.svg";
+import GroupMe from "../assets/icons/GroupMe.svg";
+import Facebook from "../assets/icons/Facebook.svg";
+import Github from "../assets/icons/Github.svg";
+import Zoom from "../assets/icons/Zoom.svg";
 
 const social_links = [
   {
-    name: "Discord",
-    logo: Discord,
-    href: "https://www.discord.gg/5SyB3yx",
+    name: "GroupMe",
+    logo: GroupMe,
+    href: "https://groupme.com/join_group/53218856/ADySgGBx",
   },
   {
     name: "Facebook",
     logo: Facebook,
-    href: "https://www.facebook.com/groups/ufssd",
+    href: "https://www.facebook.com/TechNole/",
   },
   {
     name: "GitHub",
     logo: Github,
-    href: "https://www.github.com/ufssd",
+    href: "https://github.com/tripplerizz/",
   },
   {
     name: "Zoom Room",
     logo: Zoom,
-    href: "https://ufl.zoom.us/j/99441879822",
+    href: "https://zoom.us/j/3407433606",
   },
 ];
 

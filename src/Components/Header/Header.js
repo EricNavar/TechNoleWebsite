@@ -1,7 +1,7 @@
 import React from "react";
 import module_styles from "./Header.module.css";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import SSDLogo from "../../assets/SSDLogo.png";
+import TechnoleLogo from "../../assets/leaf-logo.png";
 import Typography from '@material-ui/core/Typography';
 
 export default function Header() {
@@ -18,7 +18,7 @@ export default function Header() {
         <div className={module_styles["Header-logo-container"]}>
           <ButtonBase onClick={scrollToTop}>
             <img
-              src={SSDLogo}
+              src={TechnoleLogo}
               alt=""
               className={module_styles["Header-logo"]}
             />

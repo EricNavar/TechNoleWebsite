@@ -7,7 +7,7 @@ import module_styles from "./HomePage.module.css";
 
 export default function HomePage() {
   useEffect(() => {
-    document.title = "Society of Software Developers";
+    document.title = "Technole";
     window.scrollTo({
       top: 0,
       left: 0,

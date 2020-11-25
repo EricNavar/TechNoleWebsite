@@ -1,16 +1,15 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { makeStyles } from "@material-ui/core/styles";
-import Typography from '@material-ui/core/Typography';
-import SpeakerEventPhoto from './../../assets/InfoTechSpeakerEvent.jpg';
-import SSDGroupPhoto from './../../assets/SSDGroupPhoto.jpg';
-import TablingPhoto from './../../assets/Tabling.png';
+import Slide1 from './../../assets/slide1.png';
+import Slide2 from './../../assets/slide2.jpg';
+import Slide3 from './../../assets/slide3.jpg';
 
 const useStyles = makeStyles((theme) => ({
   carouselContainer: {
     textAlign: 'center',
     maxWidth: "100vw",
-    width: 450,
+    width: 600,
     borderRadius: 6
   },
   description: {
@@ -29,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
   },
   item: {
     maxWidth: "100vw",
-    width: 450
+    width: 600
   },
   aspectRatioBoxOuter: {
     width: "inherit",
     height: 0,
     overflow: "hidden",
-    paddingTop: "75%",
+    paddingTop: "42%",
     position: "relative"
   },
   aspectRatioBoxInner: {
@@ -56,17 +55,17 @@ export default function AboutUsCarousel() {
     {
       name: "infotech",
       description: "SSD after a tech talk from BridgeRock Data",
-      photo: SSDGroupPhoto
+      photo: Slide1
     },
     {
       name: "group pic",
       description: "SSD members at InfoTech speaker series",
-      photo: SpeakerEventPhoto
+      photo: Slide2
     },
     {
       name: "tabling",
       description: "Cool SSD members tabling 😎",
-      photo: TablingPhoto
+      photo: Slide3
     }
   ]
   return (
@@ -89,9 +88,6 @@ function Item(props) {
     <div className={classes.aspectRatioBoxOuter}>
       <div className={classes.aspectRatioBoxInner}>
         <img alt="" src={props.item.photo} className={classes.photo} />
-        <div className={classes.descriptionContainer}>
-          <Typography className={classes.description}>{props.item.description}</Typography>
-        </div>
       </div>
     </div>
   )
